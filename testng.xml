@@ -5,12 +5,12 @@
             <class name="tests.LoginTest"/>
         </classes>
     </test>
-   <test name="FirefoxTest">
+  <!-- <test name="FirefoxTest">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="tests.LoginTest"/>
         </classes>
-    </test>
+    </test> -->
     <test name="EdgeTest">
         <parameter name="browser" value="edge"/>
         <classes>

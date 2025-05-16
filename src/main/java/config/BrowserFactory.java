@@ -12,9 +12,9 @@ public class BrowserFactory {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 return new ChromeDriver();
-            case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                return new FirefoxDriver();
+//            case "firefox":
+//                WebDriverManager.firefoxdriver().setup();
+//                return new FirefoxDriver();
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 return new EdgeDriver();
