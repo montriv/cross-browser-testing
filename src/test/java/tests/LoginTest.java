@@ -18,7 +18,7 @@ public class LoginTest {
     ExtentTest test;
 
     @BeforeMethod
-    @Parameters({"browser"})
+    @Parameters("browser")
     public void setup(String browser) {
         ExtentSparkReporter spark = new ExtentSparkReporter("reports/ExtentReport.html");
         extent = new ExtentReports();
