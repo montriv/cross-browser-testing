@@ -39,6 +39,7 @@ pipeline {
             steps {
                 bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=firefox'
             // bat '"C:\\Program Files\\apache-maven-3.9.9\\bin\\mvn" clean test  -DsuiteXmlFile=testng.xml -Dbrowser=firefox'
+           		echo "Success!"
             }
         }
         

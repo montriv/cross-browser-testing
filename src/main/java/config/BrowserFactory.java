@@ -16,9 +16,9 @@ public class BrowserFactory {
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
                 return new ChromeDriver(chromeOptions);
-            case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                return new FirefoxDriver();
+//            case "firefox":
+//                WebDriverManager.firefoxdriver().setup();
+//                return new FirefoxDriver();
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 EdgeOptions edgeOptions = new EdgeOptions();
