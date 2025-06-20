@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools { 
-        git 'Default Git'  // Replace 'Default Git' with the name configured in Jenkins,
+        git 'Git'  // Replace 'Default Git' with the name configured in Jenkins,
         maven 'Maven'  // Name should match the one set in Global Tool Configuration
     }
     environment {
@@ -40,6 +40,12 @@ pipeline {
              //   bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=firefox'
             // bat '"C:\\Program Files\\apache-maven-3.9.9\\bin\\mvn" clean test  -DsuiteXmlFile=testng.xml -Dbrowser=firefox'
               echo "Success!"
+            }
+        }
+        
+        stage('Run Tests on Edge') {
+            steps {
+                bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=edge'
             }
         }
 
