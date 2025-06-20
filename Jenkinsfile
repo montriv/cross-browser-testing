@@ -37,7 +37,7 @@ pipeline {
 
         stage('Run Tests on Firefox') {
             steps {
-             // bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=firefox'
+              bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=firefox'
             // bat '"C:\\Program Files\\apache-maven-3.9.9\\bin\\mvn" clean test  -DsuiteXmlFile=testng.xml -Dbrowser=firefox'
            		echo "Success!"
             }
@@ -45,8 +45,7 @@ pipeline {
         
         stage('Run Tests on Edge') {
             steps {
-             //   bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=edge'
-             echo "Success!"
+                bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=edge'
             }
         }
 
