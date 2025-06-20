@@ -14,16 +14,16 @@ public class BrowserFactory {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+                chromeOptions.addArguments("--headless=new", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage");
                 return new ChromeDriver(chromeOptions);
 //            case "firefox":
 //                WebDriverManager.firefoxdriver().setup();
 //                return new FirefoxDriver();
             case "edge":
                 WebDriverManager.edgedriver().setup();
-                EdgeOptions edgeOptions = new EdgeOptions();
-                edgeOptions.addArguments("--headless=new", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage");
-                return new EdgeDriver(edgeOptions);
+             //   EdgeOptions edgeOptions = new EdgeOptions();
+             //   edgeOptions.addArguments("--headless=new", "--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage");
+                return new EdgeDriver();
             default:
                 throw new IllegalArgumentException("Unsupported browser: " + browserName);
         }

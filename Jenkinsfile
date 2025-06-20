@@ -45,8 +45,7 @@ pipeline {
         
         stage('Run Tests on Edge') {
             steps {
-               // bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=edge'
-                echo "Success!"
+                bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=edge'
             }
         }
 
