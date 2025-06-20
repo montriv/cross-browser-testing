@@ -22,7 +22,7 @@ public class BrowserFactory {
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 EdgeOptions edgeOptions = new EdgeOptions();
-                edgeOptions.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+                edgeOptions.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage");
                 return new EdgeDriver(edgeOptions);
             default:
                 throw new IllegalArgumentException("Unsupported browser: " + browserName);
