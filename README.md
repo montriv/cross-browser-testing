@@ -50,3 +50,6 @@ Operating Systems: Windows
 ## Notifications:
 
 * Email notifications on test success or failure.
+
+## Screenshot:
+![image_alt](https://github.com/montriv/cross-browser-testing/blob/41b5d005ef7dc0308bf51c3f703219d1d49a58bf/Screenshot%202025-06-20%20111537.png)
